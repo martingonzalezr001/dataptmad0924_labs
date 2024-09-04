@@ -29,7 +29,7 @@ Below is a summary of the steps you will follow in this lab:
 - __base branch:__ This is the target branch where the changes should be applied (i.e.: `main`)
 - __head repository:__ This is the repository where the changes originate from (i.e.: `<your-github-account>/dataptmadxxxx_labs`)
 - __head branch:__ This is the branch that contains the new changes (i.e.: `resolving-git-conflicts`)
-- __Pull Request Header:__ Process automation is key, and for that reason, you must be thorough when naming files, folders, branches, pull requests, etc. (i.e.: [<lab-name>] <Name Surname>)
+- __Pull Request Header:__ Process automation is key, and for that reason, you must be thorough when naming files, folders, branches, pull requests, etc. (i.e.: `[<lab-name>] <Name Surname>`)
 - __Pull Request Comments:__ Use this section to inform us of anything you consider relevant regarding the submission. It is very important that we are aware of your thoughts at all times so we can act quickly and effectively.
 
 **Note: The above is also the general procedure with which you submit assignments in this course. You are not likely to encounter conflicts in this course because only you will be working on your own Git repo. But in your future professional work you'll find yourself using these steps a lot.**
