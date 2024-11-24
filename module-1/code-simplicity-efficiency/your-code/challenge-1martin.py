@@ -27,49 +27,40 @@ def parserLetter(n1_str, n2_str ,dict, op):
     '''Set the strings operators into ints to calculate the result and transform it into a string'''
     n1 = 0
     n2 = 0
+    result_str = ''
     
     for key, value in dict.items():
         if key == n1_str:
             n1 = value
         if key == n2_str:
             n2 = value
-    print(" N1: " + str(n1))
-    print(" N2: " + str(n2))
-    
-    
-    result_str = ''
-
-    
-    print(type(op))
-    print("Op: ")
-    print(op)
-    if op == 'add' or op == '+' or op == 'sumar' or op == 'suma' or op == 1 or  op == "1" or op == "+" or op == "plus" :
-        result = n1 + n2
-        print(result)
-
-    if op == 'subtract' or op == 'restar' or op == 'resta' or op == '-' or op == 'minus':
-        result = n1 - n2
         
 
-    else:
-        print("....")
-        return "I cannot make that operation, goodbye :)"
+    if op == 'add' or op == '+' or op == 'sumar' or op == 'suma' or op == 1 or  op == "1" or op == "+" or op == "plus" :
+        result = n1 + n2
 
-    for key, value in dict.items():
-        print("check check")
-        if value == result:
-            result_str = key
-            print(result_str)
-
-    # Choose arithmetic operation 
-    if op == 'add' or op == '+' or op == 'sumar' or op == 'suma' or op == '1' or op == '+' or op == "plus":
+        for key, value in dict.items():
+            if value == result:
+                result_str = key
+                print(result_str)
+        
         print(n1_str + " + " + n2_str  + " = " + result_str)
+        return f"{n1_str} + {n2_str} = {result_str}"
 
-        return f"{n1_str} + {n2_str} = {result_str}"
-    
-    elif op == 'subtract' or op == 'restar' or op == 'resta' or op == '-' or op == 'minus':
+
+    if op == 'subtract' or op == 'restar' or op == 'resta' or op == '-' or op == 2 or  op == "2" or op == 'minus':
+        result = n1 - n2
+
+        
+
+        for key, value in dict.items():
+            if value == result:
+                result_str = key
+                print(result_str)
+        
         print(n1_str + " - " + n2_str  + " = " + result_str)
-        return f"{n1_str} + {n2_str} = {result_str}"
+        return f"{n1_str} - {n2_str} = {result_str}"
+        
     else:
         return "I cannot make that operation, goodbye :)"
 
